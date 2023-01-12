@@ -1,0 +1,73 @@
+.topicos {
+	text-align: center;
+	padding: 2em;
+	background-image: var(--azul-degrade);
+	color: var(--branco-principal);
+}
+
+.topicos__titulo {
+	font-weight: 300;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+}
+
+.topicos__lista{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.topicos__link {
+	color: var(--branco-principal);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: var(--titulo-laranja);
+	padding: 1em;
+}
+
+.topicos__lista-item{
+	margin: 1.5em 0.5em;
+}
+
+/* ############## LAYOUT 1024 - TABLET ##############*/
+
+@media screen and (min-width: 1024px){
+
+	.topicos__titulo{
+		font-size:24px
+	}
+
+	.topicos__link{
+		font-size: 24px;
+	}
+
+	.topicos__lista{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.topicos__lista-item{
+		padding: 1em 0;
+	}
+
+	.cartao__botoes-botao:hover {
+		transition: 1s;
+		background-color: var(--branco-principal);
+		border: 1px solid var(--titulo-laranja);
+		color: var(--titulo-laranja);
+		scale: 120%;
+	}
+
+}
+
+/* ############## LAYOUT 1728 - DESKTOP ##############*/
+
+@media screen and (min-width: 1728px){
+	.topicos__lista{
+		width: 50%;
+		margin-bottom: 2em;
+	}
+
+}
+

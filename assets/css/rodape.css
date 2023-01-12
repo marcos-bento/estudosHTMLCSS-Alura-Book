@@ -1,0 +1,74 @@
+hr{
+	margin: 0;
+}
+
+.rodape{
+	background-color: var(--branco-principal);
+	padding: 1em;
+}
+
+.rodape__titulo{
+	padding: 1em;
+}
+
+.rodape__lista{
+	display:none;
+}
+
+/* ############## LAYOUT 1024 - TABLET ##############*/
+
+@media screen and (min-width: 1024px){
+	.rodape__lista{
+		display: block;
+	}
+
+	.rodape__lista-titulo{
+		color: var(--cor-rodape);
+		font-size: 14px;
+		padding: 1em;
+	}
+
+	.rodape__lista-topico{
+		display: flex;
+		vertical-align: center;
+		padding: 0.3em;
+	}
+
+	.rodape__lista-texto{
+		padding: 1em;
+		font-size: 14px;
+		color: var(--cor-rodape-links);
+	}
+
+	.rodape__conteudo{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin-bottom: 2em;
+	}
+
+	.rodape__lista-imagem {
+		width: 35px;
+		height: 35px;
+	}
+
+}
+
+/* ############## LAYOUT 1728 - TABLET ##############*/
+
+@media screen and (min-width: 1728px){
+	.rodape__titulo{
+		text-align: right;
+		font-size: 24px;
+		padding-top: 0.5em;
+		margin-right: 3em;
+	}	
+
+	.rodape__lista{
+		border-left: 1px solid var(--cor-rodape);
+		padding-left: 0.5em;
+	}
+
+	.rodape{
+		padding: 3em 0;
+	}
+}
